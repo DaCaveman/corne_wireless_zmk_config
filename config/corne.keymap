@@ -177,17 +177,17 @@
     layer_5 {
       display-name = "Fn";
 
-                                          // -----------------------------------------------------------------------------------------
-                                          // | reset |     |     |     |    |Lay0|***|Lay1     |  Lay2   |    |    |            | reset      |
-                                          // | BT0   | BT1 | BT2 | BT3 |    |    |***|         |         |    |    | BT CLR CUR | BT CLR ALL |
-                                          // | boot  |     |     |     |    |    |***| OUT TOG |         |    |    |            | boot       |
-                                          //           | DEL | ALT SPACE | 4 SPC |***| 3 ENT | SHIFT SPACE | BSPC |
+                                                // -----------------------------------------------------------------------------------------
+                                                // | reset |     |     |     |    |Lay0|***|Lay1     |  Lay2   |    |    |            | reset      |
+                                                // | BT0   | BT1 | BT2 | BT3 |    |    |***|         |         |    |    | BT CLR CUR | BT CLR ALL |
+                                                // | boot  |     |     |     |    |    |***| OUT TOG |         |    |    |            | boot       |
+                                                //           | DEL | ALT SPACE | 4 SPC |***| 3 ENT | SHIFT SPACE | BSPC |
 
       bindings = <
-        &sys_reset       &none         &none         &none      &none     &to 0       &to 1     &to 2      &none  &none     &none     &sys_reset
-        &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &none       &none   &none   &none  &none  &bt BT_CLR  &bt BT_CLR_ALL
-        &bootloader      &none         &none         &none      &none     &none       &out OUT_TOG  &none  &none  &none     &none     &bootloader
-                                                         &trans  &trans  &trans       &trans  &trans  &trans
+        &sys_reset       &none         &none         &none      &none     &to 0              &to 1     &to 2      &none  &none     &none     &sys_reset
+        &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &none              &none   &none   &none  &none  &bt BT_CLR  &bt BT_CLR_ALL
+        &bootloader      &none         &none         &none      &none     &out OUT_BLE       &out OUT_USB  &none  &none  &none     &none     &bootloader
+                                                                &trans  &trans  &trans       &trans  &trans  &trans
       >;
     };
 
