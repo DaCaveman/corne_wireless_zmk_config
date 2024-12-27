@@ -195,17 +195,17 @@
     layer_6 {
       display-name = "GamingSecond";
 
-              // --------------------------------------------------------------------------------
-              // |  ESC  |  M  |  W  |  E  |  R  |  T  |***|  Z  |  U   |  I  |  O  |  P  |  Ü  |
-              // |  TAB  |  A  |  S  |  D  |  F  |  G  |***|  H  |  J   |  K  |  L  |  Ö  |  Ä  |
-              // | SHIFT |  1  |  2  |  3  |  4  |  5  |***|  N  |  M   |  ,  |  .  |  -  | WIN |
-              //                    | CRTL | ALT | SPC |***| 3 ENT | SHIFT SPACE | 4 BSPC |
+                    // --------------------------------------------------------------------------------
+                    // |  ESC  |  M  |  W  |  E  |  R  |  T  |***|  Z  |  U   |  I  |  O  |  P  |  Ü  |
+                    // |  TAB  |  A  |  S  |  D  |  F  |  G  |***|  H  |  J   |  K  |  L  |  Ö  |  Ä  |
+                    // | SHIFT |  1  |  2  |  3  |  4  |  5  |***|  N  |  M   |  ,  |  .  |  -  | WIN |
+                    //                    | CRTL | ALT | SPC |***| 3 ENT | SHIFT SPACE | 4 BSPC |
 
       bindings = <
-        &trans  &kp M   &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans       &trans  &trans  &trans
+        &trans  &kp M   &trans  &kp DE_TILDE  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans        &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &kp N1  &kp N2  &kp N3        &kp N4  &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans  &trans  &trans       &trans  &trans  &trans
       >;
     };
   };
