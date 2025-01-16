@@ -202,8 +202,8 @@
                     //                    | CRTL | ALT | SPC |***| 3 ENT | SHIFT SPACE | 4 BSPC |
 
       bindings = <
-        &trans  &kp M   &trans  &kp DE_TILDE  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans        &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &kp M   &trans  &kp DE_TILDE  &kp K  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans        &kp J  &trans       &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &kp N1  &kp N2  &kp N3        &kp N4  &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
                                       &trans  &trans  &trans       &trans  &trans  &trans
       >;
